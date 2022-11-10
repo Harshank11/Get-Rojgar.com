@@ -1,0 +1,97 @@
+#trend {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 0px 50px;
+  }
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(89, 89, 188);
+}
+  
+  #trend > section>div>a p+p{
+  /* border: 2px solid red; */
+  color: grey;
+  font-size: 15px;
+  margin-top: -10px;
+  
+  }
+  #trend > section>div>a p:first-child{
+  font-size: 22px;
+    margin-top: 5px;
+    color: black;
+    }
+  
+  
+  #trend > section {
+    width: 90%;
+    display: flex;
+    justify-content: left;
+    overflow-x: auto;
+
+  }
+  #trend > section::-webkit-scrollbar {
+    visibility:hidden;
+  }
+  #trend > section > div {
+    min-width: 27.33%;
+    height: auto;
+    position: relative;
+    left: 0;
+    margin-top: 20px;
+ 
+  
+  }
+ 
+  .slide{
+      text-align: center;
+      font-size: 18px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      margin: 15px;
+      border-radius: 10px;
+      padding: 15px;
+  }
+  
+  
+  .multiimage{
+    justify-content: center;
+  }
+
+  .skill_box{
+   border-radius: 10px;
+   margin: 10px;
+   padding: 5px 25px;
+   border: 1px solid rgb(235, 233, 233);
+   background-color:  rgba(0,0,0,0);
+   font-size: 15px;
+  }
+  .skill_box:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+  }
+  .skills{
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: auto;
+    margin-top: 3%;
+  }
+  .skill_text{
+    /* border: 1px solid red; */
+    font-size: 15px;
+    color: black;
+  }
+  .icon{
+    /* border: 1px solid; */
+    margin-right: 5px;
+  }
+
+ 
+  .Discover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+  }

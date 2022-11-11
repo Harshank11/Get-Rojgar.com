@@ -29,10 +29,11 @@ a:hover{
   
   
   #trend > section {
-    width: 90%;
+    width: 85%;
     display: flex;
     justify-content: left;
     overflow-x: auto;
+    margin-left:6% ;
 
   }
   #trend > section::-webkit-scrollbar {
@@ -42,10 +43,10 @@ a:hover{
     min-width: 27.33%;
     height: auto;
     position: relative;
-    left: 0;
+    /* left: 0;
+    right: 0; */
+    
     margin-top: 20px;
- 
-  
   }
  
   .slide{
@@ -94,4 +95,17 @@ a:hover{
   .Discover {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
+  }
+  .searchbar{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    ;
+    border-radius: 20px;
+    height: auto;
+    width: 70%;
+    margin: auto;
+  }
+  .butt{
+    color-scheme: teal;
+    border: none;
+    
   }

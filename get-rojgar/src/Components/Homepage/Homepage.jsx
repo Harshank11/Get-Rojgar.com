@@ -1,4 +1,4 @@
-import { Heading,Text,Input,Box,Image, Center, Button,Link, textDecoration, Spacer} from "@chakra-ui/react"
+import { Heading,Text,Input,Box,Image, Center, Button,Flex,Stack,span,Link, textDecoration, Spacer,Divider} from "@chakra-ui/react"
 import React from "react"
 import { SearchIcon } from "@chakra-ui/icons"
 import UserProfile from "./Userprofil"
@@ -81,10 +81,20 @@ export default function Homepage(){
         <Navbar/>
         <Heading as='h1' size='4xl'>Find your dream job now</Heading>
         <Text>5 lakh+ jobs for you to explore</Text>
-        <Input placeholder='Enter skills/designations' width={"30%"} height={'35px'}   />
-        <Input placeholder='Basic usage' width={"20%"} height={'35px'}   />
-        <Input placeholder='Basic usage' width={"20%"} height={'35px'}   />
-       <SearchIcon />
+        <Box className="searchbar">
+
+        <Flex>
+        <Divider orientation="vertical" />     
+        <Input placeholder='Enter skills/designations'   w={'40%'} h={'40px'} border={'none'} borderRight={'1px solid rgb(235, 233, 233)'}/>
+        <Divider orientation="vertical" />       
+        <Input placeholder='Basic usage'  w={'20%'}  h={'40px'} border={'none'} borderRight={'1px solid rgb(235, 233, 233)'} />
+        <Divider orientation="vertical" />     
+        <Input placeholder='Basic usage'  w={'30%'} h={'40px'} border={'none'}/>
+        </Flex>
+        </Box>
+        
+        <SearchIcon />
+       
         <UserProfile usersData={usersdata} />
         <Heading as='h1' size='4xl'>Top companies hiring now</Heading>
 
@@ -319,7 +329,313 @@ export default function Homepage(){
             </Box>
         </Box>
         </Center>
+
+
        <Heading as='h1' size='4xl'>Sponsored Companies</Heading>
+
+
+       <Center>
+         <main id="trend">
+            <section>
+            <div class="" style={{gap:'10px'}}>
+                <div style={{border:'1px solid grey', borderRadius:'20px',margin:'15px'}} >
+                    <a href="">
+                        <Center >
+                        <Box display={"flex"} className='multiimage'>  
+                        <Image width={'35%'} src="https://img.naukimg.com/logo_images/groups/v1/36228.gif"></Image>
+
+                       </Box>
+                       </Center>
+                       <Heading as='h2' size='xl'>Tata Projects</Heading>
+                       <p>3.2K+ Reviews</p>
+                    <Center padding={'10px'} >
+                        <Stack spacing={10} direction='row'>
+                            <Button className="butt">Engineering</Button>
+                            <Button className="butt">Indian MNC</Button>
+                            <Button className="butt">B2B</Button>
+                        </Stack>
+                    </Center>
+                    </a>
+                </div>
+
+                <br></br>
+
+
+                <div style={{border:'1px solid grey', borderRadius:'20px',margin:'15px'}}>
+                    <a href="">
+                        <Center >
+                        <Box display={"flex"} className='multiimage'>  
+                        <Image width={'35%'} src="https://img.naukimg.com/logo_images/groups/v1/6240065.gif"></Image>
+
+                       </Box>
+                       </Center>
+                       <Heading as='h2' size='xl'>The Energi Group</Heading>
+                       <p>5 Reviews</p>
+                    <Center padding={'10px'} >
+                        <Stack spacing={10} direction='row'>
+                            <Button className="butt">B2B</Button>
+                            <Button className="butt">Private</Button>
+                            <Button className="butt">IT</Button>
+                        </Stack>
+                    </Center>
+                    </a>
+                </div>
+            </div>
+
+            <div class="" style={{gap:'10px'}}>
+                <div style={{border:'1px solid grey', borderRadius:'20px',margin:'15px'}} >
+                    <a href="">
+                        <Center >
+                        <Box display={"flex"} className='multiimage'>  
+                        <Image width={'35%'} src="https://img.naukimg.com/logo_images/groups/v1/306162.gif"></Image>
+
+                       </Box>
+                       </Center>
+                       <Heading as='h2' size='xl'>National Payment</Heading>
+                       <p>206 Reviews</p>
+                    <Center padding={'10px'} >
+                        <Stack spacing={10} direction='row'>
+                            <Button className="butt">Internet</Button>
+                            <Button className="butt">Financial Services</Button>
+                            <Button className="butt">B2C</Button>
+                        </Stack>
+                    </Center>
+                    </a>
+                </div>
+
+                <br></br>
+
+
+                <div style={{border:'1px solid grey', borderRadius:'20px',margin:'15px'}}>
+                    <a href="">
+                        <Center >
+                        <Box display={"flex"} className='multiimage'>  
+                        <Image width={'35%'} src="https://img.naukimg.com/logo_images/groups/v1/6640601.gif"></Image>
+
+                       </Box>
+                       </Center>
+                       <Heading as='h2' size='xl'>Maknet</Heading>
+                       <p>No Reviews Yet</p>
+                    <Center padding={'10px'} >
+                        <Stack spacing={10} direction='row'>
+                            <Button className="butt">Startup</Button>
+                            <Button className="butt">Internet</Button>
+                            <Button className="butt">B2B</Button>
+                        </Stack>
+                    </Center>
+                    </a>
+                </div>
+            </div>
+
+            <div class="" style={{gap:'10px'}}>
+                <div style={{border:'1px solid grey', borderRadius:'20px',margin:'15px'}} >
+                    <a href="">
+                        <Center >
+                        <Box display={"flex"} className='multiimage'>  
+                        <Image width={'35%'} src="https://img.naukimg.com/logo_images/groups/v1/275530.gif"></Image>
+
+                       </Box>
+                       </Center>
+                       <Heading as='h2' size='xl'>Torrent Pharma</Heading>
+                       <p>1.2K+ Reviews</p>
+                    <Center padding={'10px'} >
+                        <Stack spacing={10} direction='row'>
+                            <Button className="butt">Public</Button>
+                            <Button className="butt">Indian MNC</Button>
+                            <Button className="butt">B2B</Button>
+                        </Stack>
+                    </Center>
+                    </a>
+                </div>
+
+                <br></br>
+
+
+                <div style={{border:'1px solid grey', borderRadius:'20px',margin:'15px'}}>
+                    <a href="">
+                        <Center >
+                        <Box display={"flex"} className='multiimage'>  
+                        <Image width={'35%'} src="https://img.naukimg.com/logo_images/groups/v1/4622367.gif"></Image>
+
+                       </Box>
+                       </Center>
+                       <Heading as='h2' size='xl'>RAIN</Heading>
+                       <p>55 Reviews</p>
+                    <Center padding={'10px'} >
+                        <Stack spacing={10} direction='row'>
+                            <Button className="butt">Corporate</Button>
+                            <Button className="butt">Public</Button>
+                            <Button className="butt">B2B</Button>
+                        </Stack>
+                    </Center>
+                    </a>
+                </div>
+            </div>
+
+            <div class="" style={{gap:'10px'}}>
+                <div style={{border:'1px solid grey', borderRadius:'20px',margin:'15px'}} >
+                    <a href="">
+                        <Center >
+                        <Box display={"flex"} className='multiimage'>  
+                        <Image width={'35%'} src="https://img.naukimg.com/logo_images/groups/v1/4612691.gif"></Image>
+
+                       </Box>
+                       </Center>
+                       <Heading as='h2' size='xl'>Pricol</Heading>
+                       <p>696 Reviews</p>
+                    <Center padding={'10px'} >
+                        <Stack spacing={10} direction='row'>
+                            <Button className="butt">Auto Compoent</Button>
+                            <Button className="butt">Indian MNC</Button>
+                            <Button className="butt">B2B</Button>
+                        </Stack>
+                    </Center>
+                    </a>
+                </div>
+
+                <br></br>
+
+
+                <div style={{border:'1px solid grey', borderRadius:'20px',margin:'15px'}}>
+                    <a href="">
+                        <Center >
+                        <Box display={"flex"} className='multiimage'>  
+                        <Image width={'35%'} src="https://img.naukimg.com/logo_images/groups/v1/2373670.gif"></Image>
+
+                       </Box>
+                       </Center>
+                       <Heading as='h2' size='xl'>Emerson</Heading>
+                       <p>148 Reviews</p>
+                    <Center padding={'10px'} >
+                        <Stack spacing={10} direction='row'>
+                            <Button className="butt">Foreign MNC</Button>
+                            <Button className="butt">B2B</Button>
+                        </Stack>
+                    </Center>
+                    </a>
+                </div>
+            </div>
+
+            <div class="" style={{gap:'10px'}}>
+                <div style={{border:'1px solid grey', borderRadius:'20px',margin:'15px'}} >
+                    <a href="">
+                        <Center >
+                        <Box display={"flex"} className='multiimage'>  
+                        <Image width={'35%'} src="https://img.naukimg.com/logo_images/groups/v1/279362.gif"></Image>
+
+                       </Box>
+                       </Center>
+                       <Heading as='h2' size='xl'>Invenio Business</Heading>
+                       <p>104 Reviews</p>
+                    <Center padding={'10px'} >
+                        <Stack spacing={10} direction='row'>
+                            <Button className="butt">IT Service</Button>
+                            <Button className="butt">Foreign MNC</Button>
+                           
+                        </Stack>
+                    </Center>
+                    </a>
+                </div>
+
+                <br></br>
+
+
+                <div style={{border:'1px solid grey', borderRadius:'20px',margin:'15px'}}>
+                    <a href="">
+                        <Center >
+                        <Box display={"flex"} className='multiimage'>  
+                        <Image width={'35%'} src="https://img.naukimg.com/logo_images/groups/v1/4642291.gif"></Image>
+
+                       </Box>
+                       </Center>
+                       <Heading as='h2' size='xl'>Tata Projects</Heading>
+                       <p>3.2K+ Reviews</p>
+                    <Center padding={'10px'} >
+                        <Stack spacing={10} direction='row'>
+                            <Button className="butt">Engineering</Button>
+                            <Button className="butt">Indian MNC</Button>
+                            <Button className="butt">B2B</Button>
+                        </Stack>
+                    </Center>
+                    </a>
+                </div>
+            </div>
+
+            <div class="" style={{gap:'10px'}}>
+                <div style={{border:'1px solid grey', borderRadius:'20px',margin:'15px'}} >
+                    <a href="">
+                        <Center >
+                        <Box display={"flex"} className='multiimage'>  
+                        <Image width={'35%'} src="https://img.naukimg.com/logo_images/groups/v1/4642291.gif"></Image>
+
+                       </Box>
+                       </Center>
+                       <Heading as='h2' size='xl'>Tata Projects</Heading>
+                       <p>3.2K+ Reviews</p>
+                    <Center padding={'10px'} >
+                        <Stack spacing={10} direction='row'>
+                            <Button className="butt">Engineering</Button>
+                            <Button className="butt">Indian MNC</Button>
+                            <Button className="butt">B2B</Button>
+                        </Stack>
+                    </Center>
+                    </a>
+                </div>
+
+                <br></br>
+
+
+                <div style={{border:'1px solid grey', borderRadius:'20px',margin:'15px'}}>
+                    <a href="">
+                        <Center >
+                        <Box display={"flex"} className='multiimage'>  
+                        <Image width={'35%'} src="https://img.naukimg.com/logo_images/groups/v1/4642291.gif"></Image>
+
+                       </Box>
+                       </Center>
+                       <Heading as='h2' size='xl'>Tata Projects</Heading>
+                       <p>3.2K+ Reviews</p>
+                    <Center padding={'10px'} >
+                        <Stack spacing={10} direction='row'>
+                            <Button className="butt">Engineering</Button>
+                            <Button className="butt">Indian MNC</Button>
+                            <Button className="butt">B2B</Button>
+                        </Stack>
+                    </Center>
+                    </a>
+                </div>
+            </div>
+
+
+
+                    
+
+            </section>
+
+         </main>
+        </Center>
+
+<Center>
+         <Box border={'1px solid rgb(235, 235, 235)'} borderRadius={'20px'} width={'80%'} padding={'20px'} marginTop={'50px'} marginBottom={'30px'}>
+            <Center> 
+                <Flex>
+                    <Center>
+                    <Box>
+                        <Image src="https://static.naukimg.com/s/0/0/i/ff-services.png"></Image>
+                    </Box>
+                    
+                    <Box>
+                        <Heading>Accelerate your job search with premium services</Heading>
+                        <Text>Services to help you get hired, faster: from preparing your CV, getting recruiter attention, finding the right jobs, and more!</Text>
+                        <Flex gap={'20px'}>
+                        <Box border={"1px solid grey"} padding={'5px'} borderRadius={'20px'}>Resume writing</Box><Box borderRadius={'20px'}padding={'5px'} border={"1px solid grey"}>Priority applicant</Box><Box border={"1px solid grey"} padding={'5px'} borderRadius={'20px'}>Resume display</Box>
+                        </Flex>
+                    </Box>
+                    </Center>
+                </Flex>
+                </Center>
+            </Box>
+     </Center>
         </div>
     )
 }

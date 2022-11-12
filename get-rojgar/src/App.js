@@ -13,6 +13,7 @@ function App() {
    <Homepage/>
    {/* <Jobs/> */}
  <Footer/>
+ <Jobs/>
     </div>
   );
 }

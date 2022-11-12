@@ -182,11 +182,11 @@ export default function Navbar() {
             </Box>
         </Box>
             <Box className="main2">
-              <Button>Login</Button>
-              <Button>Register</Button>
+              <Button backgroundColor={'none'} color={'rgb(97,126,255)'}>Login</Button>
+              <Button backgroundColor={'rgb(255,117,85)'} border={'none'} color={'white'} >Register</Button>
           
                   <Menu>
-                <MenuButton >
+                <MenuButton color={'grey'} border={'none'}>
                 For Employers <ChevronDownIcon />
                 </MenuButton>
                 <MenuList>

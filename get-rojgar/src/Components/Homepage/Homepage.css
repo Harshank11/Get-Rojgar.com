@@ -40,7 +40,7 @@ a:hover{
     visibility:hidden;
   }
   #trend > section > div {
-    min-width: 27.33%;
+    min-width: 23.33%;
     height: auto;
     position: relative;
     /* left: 0;
@@ -93,7 +93,9 @@ a:hover{
 
  
   .Discover {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid rgb(235, 233, 233);
+    border-radius: 20px;
+    font-size: 14px;
 
   }
   .searchbar{
@@ -107,5 +109,7 @@ a:hover{
   .butt{
     color-scheme: teal;
     border: none;
+    background-color: transparent;
+    
     
   }

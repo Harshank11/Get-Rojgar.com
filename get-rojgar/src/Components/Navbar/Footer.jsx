@@ -10,17 +10,17 @@ export default function footer(){
                <Divider orientation='horizontal' borderColor={'grey'}  />
                <hr />
                <Divider/>
-        <Center mb={'4%'}>
+        <Center mb={'2%'}>
             <Center w={'80%'}  padding={'20px'}>
                 <Flex  w={'100%'}>
-                    <Box w={'25%'} >
-                        <Image src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" ></Image>
+                    <Box w={'28%'} >
+                        <Image w={'80%'} h={'200px'} mb={'-50px'} mt={'-30px'} src="Get.png" ></Image>
                         <Text>Connect with us</Text>
                         <Box >
-                            <Image src="https://static.naukimg.com/s/0/0/i/new-homepage/facebook.svg"></Image>
-                            <Image src="https://static.naukimg.com/s/0/0/i/new-homepage/instagram.svg"></Image>
-                            <Image src="https://static.naukimg.com/s/0/0/i/new-homepage/twitter.svg"></Image>
-                            <Image src="https://static.naukimg.com/s/0/0/i/new-homepage/linkedin.svg"></Image>
+                            <Image m={'5px'} src="https://static.naukimg.com/s/0/0/i/new-homepage/facebook.svg"></Image>
+                            <Image m={'5px'} src="https://static.naukimg.com/s/0/0/i/new-homepage/instagram.svg"></Image>
+                            <Image m={'5px'}  src="https://static.naukimg.com/s/0/0/i/new-homepage/twitter.svg"></Image>
+                            <Image m={'5px'}  src="https://static.naukimg.com/s/0/0/i/new-homepage/linkedin.svg"></Image>
                         </Box>
                     </Box>
 

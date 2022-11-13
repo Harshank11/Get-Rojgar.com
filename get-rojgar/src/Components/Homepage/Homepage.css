@@ -48,6 +48,8 @@ a:hover{
     
     margin-top: 20px;
   }
+
+
  
   .slide{
       text-align: center;
@@ -56,12 +58,17 @@ a:hover{
       margin: 15px;
       border-radius: 10px;
       padding: 15px;
+      transition: transform .3s;
   }
-  
+  .slide:hover{
+    transform: scale(1.1);
+  }
   
   .multiimage{
     justify-content: center;
   }
+
+  
 
   .skill_box{
    border-radius: 10px;
@@ -70,6 +77,7 @@ a:hover{
    border: 1px solid rgb(235, 233, 233);
    background-color:  rgba(0,0,0,0);
    font-size: 15px;
+   transition: transform .5s;
   }
   .skill_box:hover{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -110,6 +118,4 @@ a:hover{
     color-scheme: teal;
     border: none;
     background-color: transparent;
-    
-    
   }

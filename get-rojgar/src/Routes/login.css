@@ -1,0 +1,19 @@
+.login-page{
+    /* border: 1px solid red; */
+margin-top: 12%;
+text-align: center;
+
+}
+
+.form{
+    margin-bottom: 25px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.subm{
+    border: none;
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}

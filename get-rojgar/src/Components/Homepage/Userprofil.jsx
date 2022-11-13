@@ -1,4 +1,4 @@
-import { Button,Center,Text } from "@chakra-ui/react";
+import { Center} from "@chakra-ui/react";
 import './Homepage.css'
 export default function UserProfile(props) {
     return props.usersData.map((elem) => (

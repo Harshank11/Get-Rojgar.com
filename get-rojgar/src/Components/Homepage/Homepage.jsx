@@ -8,9 +8,9 @@ import {
   Button,
   Flex,
   Stack,
-  Link,
-  textDecoration,
-  Spacer,
+  // Link,
+  // textDecoration,
+  // Spacer,
   Select,
   Divider,
 } from "@chakra-ui/react";
@@ -20,6 +20,8 @@ import UserProfile from "./Userprofil";
 import "./Homepage.css";
 import Navbar from "../Navbar/Navbar";
 // import { Carousel } from 'primereact/carousel';
+// import { Link,Navigate } from "react-router-dom";
+// import Jobs from "../Jobs/Jobs";
 
 export default function Homepage() {
   const usersdata = [
@@ -28,32 +30,32 @@ export default function Homepage() {
         {
           icon: "https://static.naukimg.com/s/0/0/i/trending-naukri/remote.svg",
           description: "Remote",
-          anc: "index.html",
+          anc: "jobs",
         },
         {
           icon: "https://static.naukimg.com/s/0/0/i/trending-naukri/mnc.svg",
           description: "MNC",
-          anc: "index.html",
+          anc: "jobs",
         },
         {
           icon: "https://static.naukimg.com/s/0/0/i/trending-naukri/marketing.svg",
           description: "Marketing",
-          anc: "index.html",
+          anc: "jobs",
         },
         {
           icon: "https://static.naukimg.com/s/0/0/i/trending-naukri/software.svg",
           description: "Software",
-          anc: "index.html",
+          anc: "jobs",
         },
         {
           icon: "https://static.naukimg.com/s/0/0/i/trending-naukri/analytics.svg",
           description: "Analytics",
-          anc: "index.html",
+          anc: "jobs",
         },
         {
           icon: "https://static.naukimg.com/s/0/0/i/trending-naukri/startup.svg",
           description: "Startup",
-          anc: "index.html",
+          anc: "jobs",
         },
         {
           icon: "https://static.naukimg.com/s/0/0/i/trending-naukri/finance.svg",
@@ -82,13 +84,16 @@ export default function Homepage() {
   return (
     <div>
       {/* <Navbar /> */}
-      <Heading as="h1" size="4xl" mt={'5%'}>
+      <Heading as="h1" size="4xl" mt={"5%"}>
         Find your dream job now
       </Heading>
-      <Text color={'grey'} fontWeight={'600'} mt='-10' mb={'40px'}>5 lakh+ jobs for you to explore</Text>
+
+      <Text color={"grey"} fontWeight={"600"} mt="-10" mb={"60px"}>
+        5 lakh+ jobs for you to explore
+      </Text>
       <Box className="searchbar">
         <Flex>
-        <SearchIcon  h={"50px"} ml={'20px'} color={'grey'}/>
+          <SearchIcon h={"50px"} ml={"20px"} color={"grey"} />
           <Divider orientation="vertical" />
           <Input
             placeholder="Enter skills / designations / companies"
@@ -106,30 +111,45 @@ export default function Homepage() {
             borderRight={"1px solid rgb(235, 233, 233)"}
           /> */}
 
-          <Select placeholder='Select experiance' w={"18%"}  h={"50px"} border={"none"} color={'blue'} textColor={'grey'} bg={'transparent'}
-            borderRight={"1px solid rgb(235, 233, 233)"} icon={'none'}>
-              <option value='option1'>Fresher</option>
-              <option value='option2'>1 year</option>
-              <option value='option3'>2 years</option>
-              <option value='option2'>3 year</option>
-              <option value='option3'>5 years</option>
-           </Select>
+          <Select
+            placeholder="Select experiance"
+            w={"18%"}
+            h={"50px"}
+            border={"none"}
+            color={"blue"}
+            textColor={"grey"}
+            bg={"transparent"}
+            borderRight={"1px solid rgb(235, 233, 233)"}
+            icon={"none"}
+          >
+            <option value="option1">Fresher</option>
+            <option value="option2">1 year</option>
+            <option value="option3">2 years</option>
+            <option value="option2">3 year</option>
+            <option value="option3">5 years</option>
+          </Select>
 
           <Divider orientation="vertical" />
-          
+
           <Input
             placeholder="Enter location"
             w={"25%"}
             h={"50px"}
             border={"none"}
           />
-          <Button w={'10%'} m={'7px'} borderRadius={'20px'} bg={'rgb(69,126,255)'} border={'none'} color={'white'} fontWeight={'600'}>Search</Button>
-          
+          <Button
+            w={"10%"}
+            m={"7px"}
+            borderRadius={"20px"}
+            bg={"rgb(69,126,255)"}
+            border={"none"}
+            color={"white"}
+            fontWeight={"600"}
+          >
+            Search
+          </Button>
         </Flex>
-        
       </Box>
-
-      
 
       <UserProfile usersData={usersdata} />
       <Heading as="h1" size="4xl">
@@ -410,7 +430,8 @@ export default function Homepage() {
         View all companies
       </Button>
 
-      <p>.</p>
+      <Divider mb={"40px"} />
+
       <Center>
         <Box display={"flex"} gap={"25px"} padding={"10px"}>
           <Box bg={"#fef9f4"}>
@@ -469,7 +490,6 @@ export default function Homepage() {
                   border: "1px solid grey",
                   borderRadius: "20px",
                   margin: "12px",
-                
                 }}
               >
                 <a href="">
@@ -861,7 +881,7 @@ export default function Homepage() {
           <Center>
             <Flex>
               <Center>
-                <Box mr={'15px'}>
+                <Box mr={"15px"}>
                   <Image src="https://static.naukimg.com/s/0/0/i/ff-services.png"></Image>
                 </Box>
 
@@ -903,39 +923,52 @@ export default function Homepage() {
           </Center>
         </Box>
       </Center>
- 
- <Divider/>
 
-<Center mt={"3%"}>
-      <Flex w={'85%'}  mb={'20px'} padding={'10px'} backgroundColor={'rgb(242,252,255)'}>
+      <Divider />
 
-        <Box w={'40%'}>
-        <Box w={'85%'} borderRadius={'20px'} padding={'10px'}>
-                         <Heading>10M+ users are on the Naukri app</Heading>
-                         <Text>Get real-time job updates on our App</Text>
-                         <Center>
-                         <Flex>
-                            <Image src="https://static.naukimg.com/s/0/0/i/new-homepage/android-app.png"></Image>
-                            <Image src="https://static.naukimg.com/s/0/0/i/new-homepage/ios-app.png"></Image>
-                         </Flex>
-                         </Center>
-           </Box>
+      <Center mt={"3%"}>
+        <Flex
+          w={"85%"}
+          mb={"20px"}
+          padding={"10px"}
+          backgroundColor={"rgb(242,252,255)"}
+        >
+          <Box w={"40%"}>
+            <Box w={"85%"} borderRadius={"20px"} padding={"10px"}>
+              <Heading>10M+ users are on the Naukri app</Heading>
+              <Text>Get real-time job updates on our App</Text>
+              <Center>
+                <Flex>
+                  <Image src="https://static.naukimg.com/s/0/0/i/new-homepage/android-app.png"></Image>
+                  <Image src="https://static.naukimg.com/s/0/0/i/new-homepage/ios-app.png"></Image>
+                </Flex>
+              </Center>
+            </Box>
+          </Box>
 
-        </Box>
-
-        <Box w={'10%'} border={'1px solid grey'} borderRadius={'20px'} padding={'10px'} m={'10px'} h={'150px'} backgroundColor={'none'}>
-               <Image w={'70%'} src="https://static.naukimg.com/s/0/0/i/download-app-link/qr-code.svg"></Image>
-               <Text >Scan to download</Text>
-        </Box>
-        <Box w={'50%'} >
-             <Image w={'70%'} src="https://static.naukimg.com/s/0/0/i/download-app-link/MaskGroup.png"></Image>
-        </Box>
-      </Flex>
+          <Box
+            w={"10%"}
+            border={"1px solid grey"}
+            borderRadius={"20px"}
+            padding={"10px"}
+            m={"10px"}
+            h={"150px"}
+            backgroundColor={"none"}
+          >
+            <Image
+              w={"70%"}
+              src="https://static.naukimg.com/s/0/0/i/download-app-link/qr-code.svg"
+            ></Image>
+            <Text>Scan to download</Text>
+          </Box>
+          <Box w={"50%"}>
+            <Image
+              w={"70%"}
+              src="https://static.naukimg.com/s/0/0/i/download-app-link/MaskGroup.png"
+            ></Image>
+          </Box>
+        </Flex>
       </Center>
-
-
-
-       
     </div>
   );
 }

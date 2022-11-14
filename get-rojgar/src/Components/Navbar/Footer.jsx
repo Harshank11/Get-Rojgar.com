@@ -25,19 +25,19 @@ export default function footer(){
                     </Box>
 
                     <Flex w={'50%'} gap={'20px'}>
-                        <Box>
+                        <Box w={'33%'}>
                             <Text>About us</Text>
                             <Text>Careers</Text>
                             <Text>Employer home</Text>
                             <Text>Sitemap</Text>
                         </Box>
-                        <Box>
+                        <Box w={'33%'}>
                         <Text>Help center</Text>
                             <Text>Summons/Notices</Text>
                             <Text>Grievances</Text>
                             <Text>Report issue</Text>
                         </Box>
-                        <Box>
+                        <Box w={'33%'}>
                         <Text>Privacy policy</Text>
                             <Text>Terms & conditions</Text>
                             <Text>Fraud alert</Text>
@@ -50,8 +50,8 @@ export default function footer(){
                          <Text>Apply on the go</Text>
                          <Text>Get real-time job updates on our App</Text>
                          <Flex>
-                            <Image src="https://static.naukimg.com/s/0/0/i/new-homepage/android-app.png"></Image>
-                            <Image src="https://static.naukimg.com/s/0/0/i/new-homepage/ios-app.png"></Image>
+                            <Image w={"50%"} src="https://static.naukimg.com/s/0/0/i/new-homepage/android-app.png"></Image>
+                            <Image w={"50%"} src="https://static.naukimg.com/s/0/0/i/new-homepage/ios-app.png"></Image>
                          </Flex>
                     </Box>
                 </Flex>

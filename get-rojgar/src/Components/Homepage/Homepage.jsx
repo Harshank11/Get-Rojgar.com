@@ -152,6 +152,7 @@ export default function Homepage() {
       </Box>
 
       <UserProfile usersData={usersdata} />
+      
       <Heading as="h1" size="4xl">
         Top companies hiring now
       </Heading>
